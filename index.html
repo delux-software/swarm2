@@ -1,0 +1,61 @@
+<!--
+	delux0r mag dich <3
+-->
+<html>
+<head>
+	<script type="text/javascript" src="game/game.js"></script>
+	<script type="text/javascript" src="game/gameHelper.js"></script>
+	<script type="text/javascript" src="managers/FPSManager.js"></script>
+	<script type="text/javascript" src="managers/MouseManager.js"></script>
+	<script type="text/javascript" src="managers/MathManager.js"></script>
+	<script type="text/javascript" src="managers/ImageManager.js"></script>
+	<script type="text/javascript" src="swarm/swarm.js"></script>
+	<script type="text/javascript" src="swarm/swarmTemplates.js"></script>
+	<script type="text/javascript" src="swarm/entity.js"></script>
+	<script type="text/javascript" src="game/grid.js"></script>
+
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="init()">
+<div class="table">
+	<div class="row">
+		<div class="cell controls">
+			<h3>&gt;_ Swarm Simulator</h3>
+			<div class="table">
+				<div class="row">     <!-- show calculations per sec -->
+					<div class="cell label">Calculations/sec</div>
+					<div class="cell value"><div id="fpsviewercalc">...</div></div>
+				</div>
+				<div class="row">     <!-- show fps -->
+					<div class="cell label">Frames/sec</div>
+					<div class="cell value"><div id="fpsviewerdraw">...</div></div>
+				</div>
+
+
+				<div class="row">
+					<div class="cell label"><input type="submit" value="delete all" onclick="game_removeALlSwarms()" /></div>
+					</div>
+
+
+
+				<div class="row">     <!-- show swarm info -->
+					<div class="cell double">How many swarms, what type (bee etc.), how many entities</div>
+				</div>
+				<div class="row">     <!-- control buttons -->
+					<div class="cell double">Controls: Reset, delete, change params, disable drawing (performance test)</div>
+				</div>
+				<div class="row">     <!-- images -->
+					<div class="cell double">Manipulate fish image: create like 180 rotated versions, then calculate fish "angle" and then display the fish according to movement.</div>
+				</div>
+				<div class="row">     <!-- sonstiges -->
+					<div class="cell double">Maus: Futter, Fressfeind, neue Platzieren, alte Löschen</div>
+				</div>
+			</div>
+		</div>
+		<div class="cell canvas">
+			<canvas id="canvas" width="1380" height="800">Nein Kevin, Internet Explorer 5 ist kein moderner Browser.</canvas>
+			<!-- <canvas id="canvas" width="2580" height="1700">Nein Kevin, Internet Explorer 5 ist kein moderner Browser.</canvas> -->
+		</div>
+	</div>
+</div>
+</body>

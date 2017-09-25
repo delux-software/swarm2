@@ -1,0 +1,9 @@
+* { margin : 0; padding : 0; -webkit-user-select:none; }
+div.table { display : table; }
+div.row { display : table-row; }
+div.cell { display : table-cell; }
+div.controls { width : 200px; vertical-align : top; padding: 8px;}
+div.canvas { padding-top:20px; }
+div.label { width : 100px; }
+div.value { width : 100px; text-align: right; }
+div.double { width:200px; border:1px solid black; }

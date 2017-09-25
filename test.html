@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript">
+
+		function doinit() {
+			alert("body init");
+		}
+
+		function docalc() {
+			alert("knopf gedrückt");
+		}
+	</script>
+</head>
+<body onload="doinit()">
+<h2>calc angle</h2>
+XSpeed <input id="ix" type="text" value="0.7"/>
+YSpeed <input id="iy" type="text" value="-0.3"/>
+Go <input type="button" value="go" onclick="docalc()"><br/>
+<div id="ta">output</div>
+
+</body>
+</html>
