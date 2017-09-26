@@ -12,10 +12,10 @@ var im_imageFolder = "./_img/";
 var im_imageOriginal = [];
 var im_imageRadius = [];
 var im_image = [];
-var im_imageCollection = { "fish" : "fish.png",  "blob" : "blob.png", "small fish" : "small_fish.png", "bee" : "small_fish.png" };
+var im_imageCollection = { "fish" : "fish.png",  "blob" : "blob.png", "small_fish" : "small_fish.png", "bee" : "bee.png" };
 
 // ------------------------------------------ declare settings
-var settingsUpdatesPerDrawFrame = 1;  // >1 means multiple calculation rounds per draw round
+var settingsUpdatesPerDrawFrame = 3;  // >1 means multiple calculation rounds per draw round
 var settingsGridSize = 200;
 var settingsRandomStartVelocity = 0.5;
 var settingsDistanceFromMouse = 250;
@@ -46,8 +46,8 @@ function init() {
 		}
 	}
 
-//	loadSwarmTemplate( swarm1, "FishSmall" );
-	loadSwarmTemplate(swarm1, "bee" );
+//	loadSwarmTemplate( swarm1, "Fish" );
+	loadSwarmTemplate( swarm1, "bee" );
 //	loadSwarmTemplate( swarm1, activeTemplate );
 
 
