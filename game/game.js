@@ -5,6 +5,7 @@ var swarmId, entityId;
 var swarm1;
 var grid = null;
 
+var activeTemplate = "Fish";
 var activeTemplate = "bee";
 
 var im_stepsPerRotation = 1;    // rotate picture by 1 degree => create 360 pictures (360 maximum)
@@ -15,8 +16,8 @@ var im_image = [];
 var im_imageCollection = { "fish" : "fish.png",  "blob" : "blob.png", "small_fish" : "small_fish.png", "bee" : "bee.png" };
 
 // ------------------------------------------ declare settings
-var settingsUpdatesPerDrawFrame = 3;  // >1 means multiple calculation rounds per draw round
-var settingsGridSize = 200;
+var settingsUpdatesPerDrawFrame = 1;  // >1 means multiple calculation rounds per draw round
+var settingsGridSize = 75;
 var settingsRandomStartVelocity = 0.5;
 var settingsDistanceFromMouse = 250;
 
@@ -46,9 +47,7 @@ function init() {
 		}
 	}
 
-//	loadSwarmTemplate( swarm1, "Fish" );
-	loadSwarmTemplate( swarm1, "bee" );
-//	loadSwarmTemplate( swarm1, activeTemplate );
+	loadSwarmTemplate( swarm1, activeTemplate );
 
 
 }

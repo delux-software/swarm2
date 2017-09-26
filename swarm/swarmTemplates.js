@@ -2,6 +2,18 @@
 var swarmTemplates = {
 	"bee" : {
 		"image" : "bee",
+		"moveInSameDirection" : 0.5,
+		"moveToCenterAlways" : 0.18,
+		"moveToCenterWhenLonely" : 0.47,
+		"moveAwayWhenTooClose" : 18,
+		"moveAwayFromEdge" : 5.5,
+		"minDistanceToEdge" : 50,
+		"minDistanceToOthers" : 25,
+		"maxDistanceToOthers" : 50,
+		"frictionLoss" : 3
+	},
+	"bee UNUSED ALT" : {
+		"image" : "bee",
 		"moveInSameDirection" : 0.4,
 		"moveToCenterAlways" : 0.05,
 		"moveToCenterWhenLonely" : 0.27,
@@ -11,7 +23,7 @@ var swarmTemplates = {
 		"minDistanceToOthers" : 20,
 		"maxDistanceToOthers" : 60,
 		"frictionLoss" : 2
-	},
+	},	
 	"Fish" : {
 		"image" : "fish",
 		"moveInSameDirection" : 0.5,
